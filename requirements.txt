@@ -1,6 +1,18 @@
 python-dotenv
 
-pandas
-numpy
-scikit-learn
-streamlit
+# --- Core Data Science & Analysis ---
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+tqdm>=4.65.0  
+dill     
+
+pymongo[srv]==4.7
+pymongo
+
+# --- Visualization ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.13.0        # Interactive visualizations
+
+-e.
