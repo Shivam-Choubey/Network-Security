@@ -18,7 +18,7 @@ def error_message_detail(error, error_detail: sys):
     return error_message
 
 
-class CustomException(Exception):
+class NetworkSecurityException(Exception):
     """
     A custom Exception class that inherits from the base Exception class.
     """
