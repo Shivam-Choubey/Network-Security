@@ -12,7 +12,7 @@ print(training_pipeline.ARTIFACT_DIR)
 # CLASS: TrainingPipelineConfig
 # =============================================================================
 # This class sets up the main folder structure for the entire run.
-class TrainigPipelineConfig:
+class TrainingPipelineConfig:
     def __init__(self, timestamp = datetime.now()):
         # 1. Create a unique timestamp (e.g., 10_25_2024_14_30_05)
         # This ensures every time you run the code, it creates a NEW folder so you don't overwrite old results.
@@ -31,7 +31,10 @@ class TrainigPipelineConfig:
 # =============================================================================
 # This class sets up the specific "mailing addresses" for data files.
 class DataIngestionConfig:
-    def __init__(self, training_pipeline_config: TrainigPipelineConfig):
+    def __init__(self, training_pipeline_config: TrainingPipelineConfig):
+        
+        self.collection_name: str = training_pipeline.DATA_INGESTION_COLLECTION_NAME
+        self.database_name: str = training_pipeline.DATA_INGESTION_DATABASE_NAME
         
         # 1. Main folder for ingestion: Artifacts/TIMESTAMP/data_ingestion
         self.data_ingestion_dir: str = os.path.join(
@@ -61,6 +64,6 @@ class DataIngestionConfig:
         )
         
         # 5. Bringing in database details from our constants
-        self.train_test_split_ration: float = training_pipeline.DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO
+        self.train_test_split_ratio: float = training_pipeline.DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO
         self.collection_name: str = training_pipeline.DATA_INGESTION_COLLECTION_NAME
         self.databae_name: str = training_pipeline.DATA_INGESTION_DATABASE_NAME
