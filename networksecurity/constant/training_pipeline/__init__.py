@@ -50,3 +50,17 @@ DATA_INGESTION_INGESTION_DIR: str = "ingested"
 # Split Ratio: This means we take 20% of the data and hide it from the AI.
 # We use that 20% later to 'test' the AI and see if it actually learned anything.
 DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO: float = 0.2
+
+
+'''
+Data Validation related constant start with the DATA_VALIDATION VAR NAME
+'''
+DATA_VALIDATION_DIR_NAME:str = "data_validation"
+DATA_VALIDATION_VALID_DIR:str = "validation"
+DATA_VALIDATION_INVALID_DIR:str = "invalid"
+DATA_VALIDATION_DRIFT_REPORT_DIR:str = "dirft_report"
+DATA_VALIDATION_DRIFT_REPORT_FILE_NAME:str = "report.yaml"
+
+
+
+
