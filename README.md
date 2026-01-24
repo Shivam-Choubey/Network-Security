@@ -21,26 +21,54 @@ This project aims to build a **robust data pipeline** for phishing detection by:
 
 ```text
 ├── .github/
-│   └── main.yml                # CI/CD workflow (GitHub Actions)
+│   └── main.yml
+├── Artifacts/
+│   ├── 01_23_2026_16_36_23/
+│   │   └── data_ingestion/
+│   │       └── feature_score/
+│   │           └── phisingData.csv
+│   └── 01_23_2026_16_38_33/
+│       └── data_ingestion/
+│           ├── feature_score/
+│           │   └── phisingData.csv
+│           └── ingested/
+│               ├── test.csv
+│               └── train.csv
+├── data_schema/
+│   └── schema.yaml
 ├── Network_Data/
-│   └── phisingData.csv         # Raw phishing dataset
+│   └── phisingData.csv
 ├── networksecurity/
-│   ├── components/             # Core pipeline components
-│   │   └── data_ingestion.py
-│   ├── constant/               # Project-wide constants
-│   │   └── training_pipeline/
-│   ├── entity/                 # Configuration entities
+│   ├── components/
+│   │   ├── __init__.py
+│   │   ├── data_ingestion.py
+│   │   └── data_validation.py
+│   ├── constant/
+│   │   ├── training_pipeline/
+│   │   │   └── __init__.py
+│   │   └── __init__.py
+│   ├── entity/
+│   │   ├── __inti__.py
+│   │   ├── artifact_entity.py
 │   │   └── config_entity.py
-│   ├── exception/              # Custom exception handling
+│   ├── exception/
+│   │   ├── __init__.py
 │   │   └── exception.py
-│   ├── logging/                # Centralized logging system
+│   ├── logging/
+│   │   ├── __init__.py
 │   │   └── logger.py
-│   └── __init__.py
-├── app.py                      # Application entry point
-├── Dockerfile                  # Docker container configuration
-├── push_data.py                # Script to push data into MongoDB
-├── test_mongodb.py             # MongoDB connection testing
-├── requirements.txt            # Python dependencies
-├── setup.py                    # Package setup configuration
+│   ├── utils/
+│   │   ├── main_utils/
+│   │   │   └── utils.py
+│   │   └── __init__.py
+│   └── __init_.py
 ├── .gitignore
-└── README.md
+├── app.py
+├── Dockerfile
+├── main.py
+├── push_data.py
+├── README.md
+├── requirements.txt
+├── setup.py
+└── test_mongodb.py
+
