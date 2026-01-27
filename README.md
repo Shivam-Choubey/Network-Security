@@ -22,48 +22,6 @@ This project aims to build a **robust data pipeline** for phishing detection by:
 ```text
 ├── .github/
 │   └── main.yml
-├── Artifacts/
-│   ├── 01_27_2026_20_22_03/
-│   │   ├── data_ingestion/
-│   │   │   ├── feature_score/
-│   │   │   │   └── phisingData.csv
-│   │   │   └── ingested/
-│   │   │       ├── test.csv
-│   │   │       └── train.csv
-│   │   ├── data_transformation/
-│   │   │   ├── transformed/
-│   │   │   │   ├── test.npy
-│   │   │   │   └── train.npy
-│   │   │   └── transformed_object/
-│   │   │       └── preprocessing.pkl
-│   │   └── data_validation/
-│   │       ├── dirft_report/
-│   │       │   └── report.yaml
-│   │       └── validation/
-│   │           ├── test.csv
-│   │           └── train.csv
-│   └── 01_27_2026_20_45_11/
-│       ├── data_ingestion/
-│       │   ├── feature_score/
-│       │   │   └── phisingData.csv
-│       │   └── ingested/
-│       │       ├── test.csv
-│       │       └── train.csv
-│       ├── data_transformation/
-│       │   ├── transformed/
-│       │   │   ├── test.npy
-│       │   │   └── train.npy
-│       │   └── transformed_object/
-│       │       └── preprocessing.pkl
-│       ├── data_validation/
-│       │   ├── dirft_report/
-│       │   │   └── report.yaml
-│       │   └── validation/
-│       │       ├── test.csv
-│       │       └── train.csv
-│       └── model_trainer/
-│           └── trained_model/
-│               └── model.pkl
 ├── data_schema/
 │   └── schema.yaml
 ├── final_model/
